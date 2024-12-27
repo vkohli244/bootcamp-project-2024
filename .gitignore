@@ -1,2 +1,8 @@
 /node_modules
 Milestone1/
+# Ignore specific files and folders
+/src/.DS_Store
+/src/blog.html
+/src/blog.js
+/src/blog.ts
+/src/blogs/
