@@ -208,5 +208,6 @@ a.secondary {
   border-radius: 50%;
 }
 .container2{
-  position:relative
+  display: -ms-inline-grid;
+  padding: 10 40px; /* Increase the space between the container and the edges of the page */
 }

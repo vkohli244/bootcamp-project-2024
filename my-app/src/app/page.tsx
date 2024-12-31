@@ -18,7 +18,7 @@ export default function Home() {
         <div className={styles.profilePicture}></div>
       </div>
     </div>
-    <div className = {styles.container}>
+    <div className = {styles.container2}>
     {blogs.map(blog => 
         <BlogPreview // This is how we call the component
           title={blog.title}
