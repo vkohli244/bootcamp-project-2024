@@ -1,0 +1,75 @@
+/* Navbar style (navbar.module.css) */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeInHover {
+  0% {
+    background-color: rgba(74, 74,74,0);
+  }
+  100% {
+    background-color: rgba(74, 74, 74,1);
+  }
+}
+
+.navbar {
+  background-color: #212020;
+  position: fixed;
+  top: 0;
+  left: 50%; /* Center the navbar horizontally */
+  transform: translateX(-50%); /* Adjust to truly center by offsetting by 50% of its own width */
+  margin-top: 20px; /* Adjust spacing from the top */
+  z-index: 10; /* Keep navbar on top */
+  display: flex;
+  justify-content: center; /* Center the navbar itself horizontally */
+  align-items: center; /* Center the navbar vertically if you have multiple elements */
+  animation: fadeIn 2s;  /* Fade in effect over 2 seconds */
+
+}
+
+  .navlist{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+  }
+  .navli {
+    /*height: 50px;*/
+    margin-right: 20px; /* Space between each nav item */
+
+  }
+  .navLink{
+    height: 100%;
+    text-decoration: none;
+    display:flex;
+    align-items:center;
+    color: white;
+    font-size: 1.2rem;  /* Adjust font size */
+    padding: 8px 14px; /* Slightly larger padding for a bigger hover box */
+    border-radius: 5px;  /* Round the corners of the links */
+  }
+  .navLink:hover {
+    background-color: #4a4a4a; /* Hover background */
+    color: #fff; /* Ensure text stays white */
+    border-radius: 20px; /* More rounded corners */
+    animation: fadeInHover 0.7s;  /* Fade in effect over 2 seconds */
+
+}
+  .navContainer {
+    background-color: #1a1a1a;  /* Slightly lighter than the background color */
+    border-radius: 50px;  /* Round the container */
+    padding: 10px 20px;  /* Add some space around the nav items */
+    display: inline-flex;  /* Only take as much width as the content */
+    justify-content: center; /* Center the nav items */
+    align-items: center;
+  }
+  
+  .navlist li:last-child {
+    margin-right: 0; /* Remove extra margin for last item */
+  }
+ 
