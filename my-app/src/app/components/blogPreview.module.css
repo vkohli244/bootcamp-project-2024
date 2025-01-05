@@ -1,3 +1,47 @@
+
+
 .container{
     padding-bottom: 15px;
-}
+ }
+ .blogPreview {
+    border-radius: 8px;
+    padding: 16px;
+    padding-bottom: 20px !important;
+    margin: 10px 0;
+    max-width: 500px; /* Set a maximum width */
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+   
+ }
+ .blogPreview:hover {
+    /*box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);*/
+    background-color: #393737;
+ }
+ .date {
+    display: flex;
+    font-size: 0.9rem;
+    color: #888;
+    padding-bottom: 10px; /* Remove excess padding */
+    white-space: nowrap; /* Prevent text wrapping */
+    margin-left: 5px;
+    align-items: center;
+ }
+ .description {
+    font-size: 1rem;
+    padding-bottom: 10px;
+ }
+ .title{
+    padding-bottom: 10px;
+ }
+ .readMore{
+ color: #35cbec;
+ }
+ .Line {
+    width: 0.8px;
+    height: 19px; /* Set to 100% of the parent's height or a fixed value */
+    background-color: #888;
+    margin-bottom: 10px;
+  }
+ 
+ 
+ 

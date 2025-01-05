@@ -20,7 +20,7 @@ const blogs: Blog[] = [
 	},
 	{
 		title: "Painting School Trip",
-        date: "Thursday November 5th",
+        date: "Friday November 5th",
         description: "This blog covers my trip to Khao Sok national park in Thailand",
         image:"./Images/KhaoSok1.jpg",
         imageAlt:"./Images/KhaoSok1.jpg",

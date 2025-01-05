@@ -11,14 +11,15 @@ export default function Resume() {
   }, []);
 
   return (
+    <div>
     <div className={isVisible ? `${styles.container} ${styles.fadeIn}` : styles.container}>
       <div className={styles.header}>
         <h1 className={styles.fullName}>Vinayak Kohlivins</h1>
         <div className={styles.contactInfo}>
-          <span className={styles.contactItem}>Location</span>
-          <span className={styles.contactItem}>Email</span>
-          <span className={styles.contactItem}>GitHub</span>
-          <span className={styles.contactItem}>LinkedIn</span>
+          <span className={styles.contactItem}>Bangkok, Thailand</span>
+          <span className={styles.contactItem}>Kohlivins@gmail.com</span>
+          <span className={styles.contactItem}>https://github.com/vkohli244</span>
+          <span className={styles.contactItem}>www.linkedin.com/in/vikohli244</span>
         </div>
       </div>
       
@@ -27,11 +28,12 @@ export default function Resume() {
           <span className={styles.educationText}>Education</span>
         </div>
         <div className={styles.educationDetails}>
-          <span className={styles.universityName}>University XYZ</span>
-          <span className={styles.duration}>Month Year - Month Year</span>
+          <span className={styles.universityName}>California State Polytechnic- San Luis Obispo</span>
+          <span className={styles.duration}>Sept 2024 - June 2028</span>
           <span className={styles.major}>Computer Science</span>
         </div>
       </section>
+    </div>
     </div>
   );
 }
