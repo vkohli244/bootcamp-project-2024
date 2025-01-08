@@ -1,0 +1,98 @@
+/* Container Styles */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation: fadeIn 1s ease-out;
+}
+.container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #f9f9f9;
+}
+
+/* Full Name and Contact Info Styles */
+.header {
+  margin-bottom: 30px;
+}
+
+.fullName {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-left: 20px; /* Space from the left */
+}
+
+.contactInfo {
+  margin-top: 10px;
+  margin-left: 20px;
+  font-size: 1rem;
+  color: #d3d3d3; /* Light grey color */
+}
+
+.contactItem {
+  margin-right: 10px;
+}
+
+.contactItem:not(:last-child)::after {
+  content: "•";
+  margin-left: 10px;
+  color: white; /* Black bullet points */
+}
+
+/* Education Section */
+.educationSection {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 30px;
+  position: relative; /* Ensure the container can hold the vertical line */
+}
+
+.educationLine {
+  position: absolute;
+  top: 0;
+  left: 20px; /* 5px away from left side */
+  width: 1px;
+  height: 100%; /* Set to 100% of the parent's height or a fixed value */
+  background-color: white;
+}
+
+.educationText {
+  position: relative;
+  margin-left: 20px; /* Space between the line and the text */
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  align-self: flex-start;
+}
+
+.educationDetails {
+  margin-left: 500px; /* Increased space between 'Education' and details */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.universityName {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.duration {
+  font-size: 0.9rem;
+  color: #d3d3d3; /* Lighter color for duration */
+  margin-top: 5px;
+}
+
+.major {
+  font-size: 1.2rem;
+  color: white;
+  margin-top: 10px;
+  align-self: flex-end; /* Align to the bottom edge of the white line */
+}
